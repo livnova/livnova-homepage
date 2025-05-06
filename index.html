@@ -1,128 +1,64 @@
-<!DOCTYPE html><html lang="ko">
+
+<!DOCTYPE html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LIVNOVA | 리브노바</title>
-  <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LIVNOVA</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Pretendard', sans-serif;
-      background-color: #f7f6f3;
-      color: #333;
-    }
-    header {
-      background-color: #ffffff;
-      padding: 1.5rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-    nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
-      color: #333;
-      font-size: 1rem;
-    }
-    .hero {
-      background: #edece7;
-      padding: 6rem 2rem;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .section {
-      padding: 4rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .section h3 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .category-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-    .category {
-      background: white;
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-      text-align: center;
-    }
-    .category h4 {
-      margin: 1rem 0 0.5rem;
-    }
-    .cta-buttons a {
-      display: inline-block;
-      margin: 1rem;
-      padding: 0.75rem 1.5rem;
-      background: #333;
-      color: white;
-      text-decoration: none;
-      border-radius: 0.5rem;
-    }
-    footer {
-      background: #ddd;
-      text-align: center;
-      padding: 2rem;
-      margin-top: 4rem;
-    }
+    body { margin: 0; font-family: 'Apple SD Gothic Neo', sans-serif; color: #333; }
+    h1, h2, h3 { margin: 0; }
+    a { text-decoration: none; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>LIVNOVA</h1>
-    <nav>
-      <a href="#about">브랜드 소개</a>
-      <a href="#products">제품 보기</a>
-      <a href="#store">스토어</a>
-      <a href="#contact">문의</a>
-    </nav>
-  </header>  <section class="hero">
-    <h2>Live with Nobility – LIVNOVA</h2>
-    <p>리브노바는 공간을 아름답게 만드는 큐레이션 브랜드입니다.</p>
-  </section>  <section class="section" id="about">
-    <h3>브랜드 소개</h3>
-    <p>리브노바는 고급스럽고 모던한 디자인을 바탕으로 리빙, 주방, 데스크 제품을 선별하여 제공합니다. 단순한 제품이 아닌 삶의 미학을 담은 오브제로서의 가치를 추구합니다.</p>
-  </section>  <section class="section" id="products">
-    <h3>제품 카테고리</h3>
-    <div class="category-grid">
-      <div class="category">
- <h4>Living</h4>
- <p>Product for cozy and sensual space</p>
-      </div>
- <div class="category">
- <h4>Kitchen</h4>
- <p>Kitchenware with functionality and beauty</p>
-      </div>
- <div class="category">
- <h4>Desk</h4>
- <p>Desk Items for Focus and Inspiration</p>
-      </div>
+
+  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1600185365894-e799a3a99a2e'); background-size: cover; height: 100vh; text-align: center; color: white;">
+    <div style="padding-top: 40vh;">
+      <h1 style="font-size: 48px;">햇살 좋은 오후,</h1>
+      <h2 style="font-size: 36px;">작은 쉼표 하나</h2>
+      <p style="font-size: 20px;">자연을 닮은 리빙 무드 아이템을 LIVNOVA에서 만나보세요.</p>
+      <a href="https://smartstore.naver.com/livnovastore" style="margin-top: 20px; display: inline-block; background-color: white; color: black; padding: 12px 24px; border-radius: 4px;">지금 만나보기</a>
     </div>
- </section> <section class="section" id="store">
- <h3>Information on the place of purchase</h3>
- <div class="cta-buttons">
- <a href="https://www.coupang.com " target="_blank">View from Coupang</a>
- <a href="https://smartstore.naver.com " target="_blank">View from Smart Store</a>
+  </section>
+
+  <section style="padding: 80px 20px; text-align: center; background-color: #f9f9f9;">
+    <h2 style="font-size: 32px;">LIVNOVA는</h2>
+    <p style="max-width: 700px; margin: 20px auto; font-size: 18px; line-height: 1.6;">
+      단순한 리빙 제품을 넘어, 감성과 여백을 담은 오브제를 선별합니다.<br>
+      LIVNOVA는 집이라는 공간을 더 따뜻하고 아름답게 만드는 일상의 파트너입니다.
+    </p>
+  </section>
+
+  <section style="display: flex; justify-content: center; gap: 40px; padding: 60px; flex-wrap: wrap;">
+    <div>
+      <img src="https://images.unsplash.com/photo-1595526114035-7c53a4b1c66e" style="width: 300px; border-radius: 8px;">
+      <h3 style="text-align: center;">Living</h3>
     </div>
- </section> <section class="section" id="contact">
- <h3> Contact us </h3>
- <p>For product and partnership inquiries, please send us the email below.</p>
- <p><strong>Email:</strong> contact@livnova.kr</p>
-  </section>  <footer>
- <p>&copy; 2025 LIVNOVA. All rights reserved.</p>
+    <div>
+      <img src="https://images.unsplash.com/photo-1603052875191-326bfe3e3c4f" style="width: 300px; border-radius: 8px;">
+      <h3 style="text-align: center;">Kitchen</h3>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1616627459420-03a2ee9dd9a7" style="width: 300px; border-radius: 8px;">
+      <h3 style="text-align: center;">Desk</h3>
+    </div>
+  </section>
+
+  <section style="padding: 60px; background-color: #fff;">
+    <h2 style="text-align: center; margin-bottom: 40px;">Lookbook</h2>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+      <img src="https://images.unsplash.com/photo-1595526114035-7c53a4b1c66e" style="width: 250px; border-radius: 8px;">
+      <img src="https://images.unsplash.com/photo-1603052875191-326bfe3e3c4f" style="width: 250px; border-radius: 8px;">
+      <img src="https://images.unsplash.com/photo-1616627459420-03a2ee9dd9a7" style="width: 250px; border-radius: 8px;">
+    </div>
+  </section>
+
+  <footer style="background-color: #222; color: white; padding: 40px; text-align: center;">
+    <p>© 2025 LIVNOVA. All rights reserved.</p>
+    <p>Contact: <a href="mailto:contact@livnova.kr" style="color: #f0e68c;">contact@livnova.kr</a></p>
+    <p>사업자등록번호: 123-45-67890 | 통신판매업신고: 제2025-인천송도-0001호</p>
   </footer>
+
 </body>
 </html>
