@@ -1,221 +1,61 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LIVNOVA – 감성 오브제 브랜드</title>
-  <link href="https://fonts.googleapis.com/css2?family=Suit&display=swap" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'SUIT', sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
-    }
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      z-index: 999;
-    }
-    nav h1 {
-      font-size: 1.5rem;
-      margin: 0;
-      color: #111;
-    }
-    nav a {
-      text-decoration: none;
-      color: #555;
-      margin-left: 1rem;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #000;
-    }
-    header {
-      position: relative;
-      height: 90vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      overflow: hidden;
-    }
-    header video {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
-      filter: brightness(0.6);
-    }
-    header h2 {
-      font-size: 2.7rem;
-      color: #fff;
-      background-color: rgba(0,0,0,0.4);
-      padding: 1rem 2rem;
-      border-radius: 12px;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1080px;
-      margin: auto;
-    }
-    h2 { margin-bottom: 1.5rem; }
-    .slider, .lookbook {
-      display: grid;
-      gap: 1rem;
-    }
-    .slider {
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-    .slider img, .lookbook img {
-      width: 100%;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-    }
-    .slider img:hover, .lookbook img:hover {
-      transform: scale(1.03);
-    }
-    .lookbook {
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      margin-top: 2rem;
-    }
-    .cta {
-      text-align: center;
-      margin-top: 3rem;
-    }
-    .cta a {
-      background: #111;
-      color: #fff;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-    .cta a:hover {
-      background: #333;
-    }
-    .review, .faq {
-      background: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      margin-top: 3rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    .review p, .faq p {
-      margin: 0.5rem 0;
-    }
-    footer {
-      background: #eaeaea;
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #666;
-      margin-top: 4rem;
-    }
-  </style>
-</head>
-<body>
-
-<nav>
-  <h1>LIVNOVA</h1>
-  <div>
-    <a href="#intro">소개</a>
-    <a href="#products">제품</a>
-    <a href="#lookbook">룩북</a>
-    <a href="#store">스토어</a>
-  </div>
-</nav>
-
-<header>
-  <video autoplay muted loop playsinline>
-    <source src="https://cdn.coverr.co/videos/coverr-candle-lit-room-7371/1080p.mp4" type="video/mp4">
-  </video>
-  <h2>LIVNOVA – 삶의 순간을 감각적으로</h2>
-</header>
-
-<section id="intro">
-  <h2>About LIVNOVA</h2>
-  <p>고요한 밤, 따뜻한 빛이 말을 건네다.<br>
-  감성을 담은 오브제, LIVNOVA와 함께하세요.</p>
-</section>
-
-<section id="products">
-  <h2>대표 제품</h2>
-  <div class="slider">
-    <img src="대표1.png" alt="우드 트레이 세트" />
-    <img src="대표2.png" alt="디퓨저 & 머그잔" />
-    <img src="대표3.png" alt="감성 조명" />
-  </div>
-</section>
-
-<section id="lookbook">
-  <h2>LOOKBOOK</h2>
-  <div class="lookbook-gallery">
-    <img src="livnova1.png" alt="리브노바 룩북 1" />
-    <img src="lvlookbook.png" alt="리브노바 룩북 2" />
-    <img src="livnova2.png" alt="리브노바 룩북 3" />
-    </div>
-</section>
-
 <style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'SUIT', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+  }
+
+  /* ... nav, header 생략 ... */
+
+  .slider, .lookbook-gallery {
+    display: grid;
+    gap: 1rem;
+  }
+  .slider {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .slider img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  .slider img:hover {
+    transform: scale(1.03);
+  }
+
   .lookbook-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-top: 2rem;
     justify-content: center;
-    padding: 20px 0;
   }
   .lookbook-gallery img {
-    width: 260px;
-    border-radius: 8px;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.12);
     transition: transform 0.3s ease;
   }
   .lookbook-gallery img:hover {
     transform: scale(1.03);
   }
+
+  @media (max-width: 600px) {
+    .slider, .lookbook-gallery {
+      grid-template-columns: 1fr;
+    }
+    .slider img {
+      height: 220px;
+    }
+    .lookbook-gallery img {
+      height: 240px;
+    }
+  }
 </style>
 
-<section class="review">
-  <h2>고객 리뷰</h2>
-  <p>"디자인이 너무 예뻐요. 인테리어 효과도 굿!" – 민*정</p>
-  <p>"선물용으로 구매했는데 반응이 정말 좋았어요!" – 박*현</p>
-  <p>"LIVNOVA 제품은 감성 끝판왕이에요." – 최*진</p>
-</section>
-
-<section class="faq">
-  <h2>자주 묻는 질문</h2>
-  <p><strong>Q. 배송은 얼마나 걸리나요?</strong><br>A. 보통 2~3일 이내 도착합니다.</p>
-  <p><strong>Q. 교환/반품은 어떻게 하나요?</strong><br>A. 수령 후 7일 이내 고객센터로 연락 주세요.</p>
-  <p><strong>Q. 향이나 조명의 강도 조절이 가능한가요?</strong><br>A. 일부 제품은 가능하며 상세 페이지를 참고해 주세요.</p>
-</section>
-
-<section class="cta" id="store">
-  <h2>지금 만나보세요</h2>
-  <a href="https://smartstore.naver.com/livnovastore" target="_blank">스마트스토어 바로가기</a>
-</section>
-
-<footer>
-  &copy; 2025 LIVNOVA. All rights reserved.<br>
-  <a href="https://instagram.com/livnova_official" target="_blank">Instagram @livnova_official</a> | Email: hello@livnova.co.kr<br>
-  사업자등록번호: 111-20-86500 | 통신판매업신고: 2025-인천연수구-0891<br>
-  상호: 리브노바 | 대표자: 정용선 | 주소: 인천광역시 연수구 인천타워대로 323<br>
-  고객센터: 010-4498-1689
-</footer>
-
-</body>
-</html>
 
 
