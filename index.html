@@ -163,11 +163,32 @@
 
 <section id="lookbook">
   <h2>LOOKBOOK</h2>
-  <div class="lookbook">
-    <img src="https://chat.openai.com/cdn-cgi/imagedelivery/HwHbDCT7O2ZMEqS1--WDVA/C0D46065-1949-4A8D-A5ED-2F1B405B798D/public" alt="디자인 소품 1" />
-    <img src="https://chat.openai.com/cdn-cgi/imagedelivery/HwHbDCT7O2ZMEqS1--WDVA/D16A4201-CF42-474B-A6B2-2133D4AD1D82/public" alt="감성 오브제 2" />
+  <div class="lookbook-gallery">
+    <img src="livnova1.png" alt="리브노바 룩북 1" />
+    <img src="livnova2.png" alt="리브노바 룩북 2" />
+    <img src="lvlookbook.png" alt="리브노바 룩북 3" />
+    <img src="lvlookbook (2).png" alt="리브노바 룩북 4" />
   </div>
 </section>
+
+<style>
+  .lookbook-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .lookbook-gallery img {
+    width: 260px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+  }
+  .lookbook-gallery img:hover {
+    transform: scale(1.03);
+  }
+</style>
 
 <section class="review">
   <h2>고객 리뷰</h2>
