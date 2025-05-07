@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVNOVA | 감성 리빙 브랜드</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Apple SD Gothic Neo', sans-serif;
+            background-color: #f8f5f2;
+            color: #333;
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 16px 32px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        nav a {
+            margin-left: 24px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .hero {
+            height: 100vh;
+            background-image: url('https://cdn.pixabay.com/photo/2016/11/29/03/53/wood-1866667_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 24px;
+        }
+        .hero-text {
+            background-color: rgba(0,0,0,0.4);
+            padding: 40px;
+            border-radius: 16px;
+        }
+        .hero-text h1 {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        .hero-text h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+        .btn {
+            background-color: white;
+            color: #333;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .about {
+            padding: 80px 24px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        .about h2 {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+        .about p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LIVNOVA</h1>
+        <nav>
+            <a href="#about">브랜드 소개</a>
+            <a href="#">제품</a>
+            <a href="#">룩북</a>
+            <a href="#">문의</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>햇살 좋은 오후,</h1>
+            <h2>작은 쉼표 하나</h2>
+            <p>자연을 닮은 리빙 무드 아이템을 LIVNOVA에서 만나보세요.</p>
+            <a class="btn" href="https://smartstore.naver.com/livnovastore" target="_blank">지금 만나보기</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h2>LIVNOVA는</h2>
+        <p>
+            단순한 리빙 제품을 넘어, 감성과 여백을 담은 오브제를 선별합니다. <br>
+            LIVNOVA는 '집'이라는 공간을 더 따뜻하고 아름답게 만드는 일상의 파트너입니다.
+        </p>
+    </section>
+</body>
+</html>
